@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    android:weightSum="1">
+
+    <!-- Judul Biodata -->
+    <TextView
+        android:id="@+id/textBiodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodata Mahasiswa"
+        android:textSize="24sp"
+        android:textColor="#4CAF50"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <!-- Nama Mahasiswa -->
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:textColor="#000000"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- NIM -->
+    <TextView
+        android:id="@+id/textNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/editNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan NIM"
+        android:textColor="#000000"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Jurusan -->
+    <TextView
+        android:id="@+id/textJurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jurusan"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:id="@+id/textJurusanValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Jurusan"
+        android:textColor="#000000"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Jenis Kelamin -->
+    <TextView
+        android:id="@+id/textJenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupJenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/radioLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:textColor="#000000"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <!-- Tempat Tanggal Lahir -->
+    <TextView
+        android:id="@+id/textTTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat, Tanggal Lahir"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <EditText
+            android:id="@+id/editTempatLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tempat Lahir"
+            android:textColor="#000000"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTanggalLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tanggal Lahir (DD/MM/YYYY)"
+            android:textColor="#000000"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:textSize="18sp"
+        android:padding="15dp" />
+
+</LinearLayout>
